@@ -5,72 +5,104 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
-        h1,h4{
-            font-family: 'Aboreto', cursive;
+        .grid-container{
+            background-color: black;
+            display: grid;
+            grid-template-rows: 300px 20% 25%;
+            grid-template-columns: 20% 80%;
+            font-family: 'Roboto Mono', monospace;
+            color: whitesmoke;
+            justify-content: center;
+        }
+        .grid-item1{
+            background-color: black;
+        }
+        .grid-item2{
+            background-color: black;
+            text-align: left;
+            color: whitesmoke;
+            text-align: left;
+            margin: 5% 10% 10% 10%;
+        }
+        .grid-item3{
+            background-color: rgb(255, 255, 167);
+            text-align: left;
+            color: black;
             text-align: center;
-            color: rgb(70, 52, 52);
+            padding: 17%;
         }
-        h1{
-            font-size: 30;
+        .grid-item4{
+            background-color: whitesmoke;
+            text-align: left;
+            color: black;
+            text-align: left;
+            padding: 4%;
         }
-        p{
-            text-decoration: none;
-            text-align: center;
-            color: rgb(70, 52, 52);
-            font-family: 'Aboreto', cursive;;
+        .grid-item5{
+            background-color: whitesmoke;
+            text-align: left;
+            color: black;
+            text-align: left;
+            padding-top: 3.5%;
+            padding-left: 2%;
         }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            color: rgb(70, 52, 52);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         ul {
-            display: table;
-            margin: 0 auto;
-            color: rgb(70, 52, 52);
-            font-family: 'Aboreto', cursive;
+            list-style-type: "> ";
         }
-        img {
-        border: 5px solid rgb(70, 52, 52);
+        a {
+            color: black;
         }
-        
+        a:hover{
+            color: yellow;
+        }
     </style>
 </head>
-<body bgcolor="beige">
-    <h1>Mikko Reinikainen</h1>
-    <p><b>A software development student from Tampere University of Applied Sciences</b></h4><br><br>
-    <img /src="./slackkuva.jpg" height="350" class="center">
+<body bgcolor="black">
 
-    <p><b>My skills:</b></p>
-    <ul>
-        <li>Basics of C++</li>
-        <li>Basics of HTML, CSS and Web development</li>
-        <li>Basic network and switch configuration</li>
-        <li>Problem solving and efficiency</li>
-    </ul><br>
-<div>
-    <p><b>About me</b></p>
-    <p>I am a 23 year old student living in Tampere with my lovely wife.<br>
-    My main hobbies include hand brew coffee and disc golf. Also, I am a bit of a gamer.<br><br></p>
-</div>
-<div>
-    <p><b>Work experience</b></p>
-    <p>For approximately 18 months, I worked for the customer service of the telecommunications company Elisa.<br>
-        For six months I worked as a Junior Data Communications Specialist, <br>
-        and mainly helped customers who had trouble with their internet connections.<br><br></p>
-        <p>This job gave me some knowledge about data communications and a good understanding <br>of
-            ETH, DSL and cablemodem connections. I learned to solve problems, <br>work as a part of 
-            a team and be productive.
-        </p>
+<div class="grid-container">
+    <div class="grid-item1"><img /src="./slackkuva.jpg"></div>
+    <div class="grid-item2">
+        <h1>Mikko Reinikainen</h1>
+        <p><b>A software development student from Tampere University of Applied Sciences</b></p>
     </div>
+    <div class="grid-item3">
+        <h3>About me</h3>
+    </div>
+    <div class="grid-item4">
+        <p>I am a 23 year old student living in Tampere with my lovely wife.
+            My main hobbies include hand brew coffee and disc golf. Also, I am a bit of a gamer.<br><br> 
+            Ever since the beginning of my studies, I have also had a great interest in web development and
+            information technology.</p>
+    </div>
+    <div class="grid-item3">
+        <h3>Work experience</h3>
+    </div>
+    <div class="grid-item4">
+        <p>For approximately 18 months, I worked for the customer service of the telecommunications company Elisa.
+            For six months I worked as a Junior Data Communications Specialist, and mainly helped customers who had trouble with their internet connections.
+        </p>
+            <p>This job gave me some knowledge about data communications and a good understanding of
+                ETH, DSL and cablemodem connections. I learned to solve problems, work as a part of 
+                a team and be productive.
+            </p>
+    </div>
+    <div class="grid-item3">
+        <h3>Contact information</h3>
+    </div>
+    <div class="grid-item5">
+        <ul>
+            <li>Linkedin <a href="https://www.linkedin.com/in/mikkoreinikainen/">Mikko Reinikainen</a></li>
+            <li>mikko.j.reinikainen@gmail.com</li>
+            <li>+358 50 3634 363</li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
